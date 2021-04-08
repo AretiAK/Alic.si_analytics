@@ -1,0 +1,14 @@
+
+<svg width="1440px" height="432px" viewBox="0 0 1440 432" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M-8,5093 L1440,5093 L1440,4651 C1369.6329,4742.19882 1288.00196,4782.52528 1195.10718,4771.97938 C978.053641,4747.33832 738.4822,4920.70035 648.673588,4976.2752 C489.607273,5074.70771 270.716077,5079.5729 -8,4990.87077 L-8,5093 Z" id="path-1"></path>
+    </defs>
+    <g id="Alice.si...kalokairi" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Alice.si" transform="translate(0.000000, -4651.000000)">
+            <g id="Path-purple-2" transform="translate(716.000000, 4872.000000) scale(-1, -1) translate(-716.000000, -4872.000000) ">
+                <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                <use fill="#A26AE6" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,15 +1,18 @@
 @import "_variables.scss";
 
 .section-6 {
+  display: flex;
+  justify-content: center;
   position: relative;
-  width: 100%;
-  padding: 0;
-  
+  background-image: url("../../svg/Section-6/background-purple.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
   @media (min-width: 1200px) {
     position: relative;
     min-height: 300px;
   }
-  
+
   &::before {
     position: absolute;
     content: "";
@@ -18,12 +21,70 @@
     width: 100%;
     width: calc(100% - 32px);
     height: 1px;
-    background-color: #ccc;
   }
+}
+
+.section-6 li {
+  list-style: none;
 }
 
 .section-6 .investors-and-media-list {
   @media (min-width: 1200px) and (max-width: 1264px) {
     justify-content: center !important;
+  }
+}
+
+.section-6 .wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section {
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.press-col {
+  color: $footer-text;
+  padding: 0;
+  position: relative;
+  top: 60px;
+}
+
+.press-col .section-title {
+  font-family: Helvetica;
+  font-size: 40px;
+  font-weight: 300;
+  color: #686868;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 36px;
+  position: relative;
+  left: 90px;
+
+  @media (max-width: 1000px) {
+    position: relative;
+    left: 0px;
+  }
+}
+
+.footer-section .contacts-title,
+.footer-section .contacts-info,
+.footer-section p {
+  @media (max-width: 1200px) {
+    color: $footer-text;
+  }
+}
+
+.terms {
+  margin-top: 100px;
+}
+
+.investor-ans-media-logo {
+  &:hover {
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
   }
 }

@@ -4,27 +4,117 @@
 
 .section-2 {
   width: 100%;
+  padding: 0 100px;
+  background-color: $pink;
+  @media (min-width: 1500px) {
+    background-image: url("../../svg/Section-2/background-2.svg");
+    background-position: 0 -932px;
+    background-repeat: none;
+    background-size: cover;
+  }
+}
+
+.section-2 .wrapper {
   padding: 0;
 }
 
-.investors-and-media-list {
+.product-demo-list {
   margin: 0;
   margin-top: 39px;
   margin-bottom: 20px;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
-.investors-and-media-link {
-    display: block;
-    transition: all 0.2s;
+.demo-order-number {
+  color: $yellow;
+  font-size: 170px;
+  font-weight: 800;
+  position: relative;
+  left: -150px;
+  top: 30px;
+  font-family: Helvetica;
+}
 
-    &:hover {
-    transform: translateY(-5px);
-    //transition: all 0s;
-    //outline: 2px solid $secondary-color;
-    //box-shadow: 0 0 3px 2px $secondary-color;
-    //border-radius: 5px;
-    //box-shadow: 0 0px 50px $secondary-color;
+.demo__image-col-1,
+.demo__image-col-2,
+.demo__image-col-3 {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+  color: $section-color;
+
+  @media (min-width: 992px) {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
+
+.demo__image-col-1 h4,
+.demo__image-col-2 h4,
+.demo__image-col-3 h4 {
+  text-align: left;
+  width: 100%;
+  margin-top: 30px;
+  font-family: Helvetica;
+  font-size: 38px;
+  letter-spacing: 0;
+  @media (max-width: 968px) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.demo__image-col-1 p,
+.demo__image-col-2 p,
+.demo__image-col-3 p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.demo__image-col-1 {
+  top: -70px;
+  @media (min-width: 1500px) {
+    position: relative;
+    margin: 100px 0;
+    top: -100px;
+    text-align: center;
+  }
+}
+
+.demo__image-col-2 {
+  top: 25px;
+  @media (min-width: 1500px) {
+    position: relative;
+    margin: 100px 0;
+    top: 0px;
+    text-align: center;
+  }
+}
+
+.demo__image-col-3 {
+  top: -110px;
+
+  @media (min-width: 1500px) {
+    position: relative;
+    margin: 100px 0;
+    top: -200px;
+    text-align: center;
+  }
+}
+
+.demo__image-col-2,
+.demo__image-col-3 {
+  @media (max-width: 968px) {
+    position: relative;
+    margin-top: 100px;
+    top: 0;
+    text-align: center;
   }
 }

@@ -1,15 +1,17 @@
-
 $header-color: rgba(255, 255, 255, 1);
 $header-color-semi: rgba(255, 255, 255, 0.5);
-$main-text-color: #6b7c93;
+$main-text-color: #808080;
 $footer-text: #9b9b9b;
-$title-color: #9355de;
+$title-color: #747474;
+$purple: #a26ae6;
+$yellow: #fec702;
+$blue: #30b9ef;
+$pink: #ea4c89;
+$green: #bed240;
 
 $section-color: #f8fafd;
 
-$secondary-color: #1cb8c4;
+$secondary-color: #30b9ef;
 $secondary-color-darken: darken($secondary-color, 5%);
 $secondary-color-active: darken($secondary-color, 8%);
 $secondary-color-lighten: lighten($secondary-color, 100%);
-
-

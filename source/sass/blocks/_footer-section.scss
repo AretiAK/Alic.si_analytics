@@ -1,59 +1,63 @@
 @import "_variables.scss";
 
 .our-contacts {
-  //flex-wrap: wrap;
-  //flex-direction: column;
-  //justify-content: space-between;
-  //display: flex;
-
-  //min-height: 500px;
-
-
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
   }
+}
 
+.footer-section {
+  padding: 80px 100px;
+}
+
+.contacts-info a {
+  @media (max-width: 768px) {
+    color: $footer-text;
+  }
 }
 
 .contacts-col {
-  //min-height: 120px;
-  //padding: 0;
-  min-width: 100%;
+  position: relative;
+  top: -10px;
+  width: 100%;
   margin-bottom: 20px;
 
-  &:first-child{
+  &:first-child {
     order: 1;
-
     @media (min-width: 768px) {
       order: 0;
+      width: 100%;
     }
   }
 
-  &::nth-child(2),
-  &::nth-child(3) {
-    //order: 0;
+  &:nth-child(2),
+  &:nth-child(3) {
+    order: 0;
 
     @media (min-width: 768px) {
       order: 0;
+      width: 100%;
     }
   }
 
-  &:last-child{
-    //order: 2;
+  &:last-child {
+    order: 2;
 
     @media (min-width: 768px) {
       order: 0;
+      width: 100%;
     }
   }
-
 
   @media (min-width: 768px) {
     min-width: 0;
+    width: 100%;
   }
 
   @media (min-width: 1200px) {
     padding: 0;
+    width: 100%;
   }
 }
 
@@ -62,7 +66,6 @@
   color: $footer-text;
   font-size: 18px;
   line-height: 35px;
-  //font-weight: 400;
   letter-spacing: 0.9px;
 
   &:nth-child(2) {
@@ -71,7 +74,7 @@
 }
 
 .alice-copyright {
-  color:#1998a2;
+  color: #1998a2;
   font-size: 18px;
 }
 
@@ -102,25 +105,69 @@
 }
 
 .contacts-title {
-  display: block;
-  color: #1CB8C4;
-  font-size: 22px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-family: Helvetica;
+  font-size: 28px;
+  color: #ffffff;
+  letter-spacing: 0;
 }
 
 a:hover {
-  color: #1CB8C4;
+  color: #1cb8c4;
   text-decoration: none;
 }
 
 .contacts-info {
   display: block;
   line-height: 33px;
-  color: $main-text-color;
+  color: white;
   font-size: 22px;
+  font-family: Helvetica;
 
   @media (min-width: 768px) {
     order: 0;
+  }
+}
+
+.email-col,
+.phone-col,
+.address-col {
+  margin: 0;
+  padding: 0;
+}
+
+.contactinfo-section {
+  margin: 0 0 40px 0;
+}
+
+.footer-section .col-5 {
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    top: 150px;
+  }
+}
+
+.footer-section .terms {
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    top: -50px;
+  }
+  @media (min-width: 1450px) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+}
+
+.footer-section .col-7 {
+  @media (max-width: 768px) {
+    position: relative;
+    top: 100px;
+    max-width: 100%;
   }
 }
