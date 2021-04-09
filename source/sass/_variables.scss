@@ -15,3 +15,4 @@ $secondary-color: #30b9ef;
 $secondary-color-darken: darken($secondary-color, 5%);
 $secondary-color-active: darken($secondary-color, 8%);
 $secondary-color-lighten: lighten($secondary-color, 100%);
+$button-color-hover: darken($header-color, 5%);

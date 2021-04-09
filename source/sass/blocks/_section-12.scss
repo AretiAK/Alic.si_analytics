@@ -1,0 +1,83 @@
+.section-12 {
+  display: flex;
+  justify-content: center;
+  background-image: url("../../svg/Section-4/background-purple.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.section-12 .alice-application-2 .row {
+  max-width: 1440px;
+}
+
+.alice-application__img-2-col .illustration-2 {
+  width: 100%;
+  position: relative;
+  top: 85px;
+  @media (max-width: 784px) {
+    width: 90%;
+    position: relative;
+    top: 0px;
+  }
+}
+
+.alice-application__text-2-col {
+  width: 100vw;
+  position: relative;
+  top: 100px;
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (max-width: 576px) {
+    top: 50px;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 5%;
+    padding-right: 0;
+  }
+
+  @media (min-width: 992px) {
+    padding-right: 80px;
+    position: relative;
+    // top: -120px;
+  }
+
+  @media (min-width: 1400px) {
+    padding-right: 80px;
+  }
+}
+
+.section-12 .overview-buttons-2 {
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.section-12 .view-use-case-button {
+  margin: 15px;
+  border: 2px solid #30b9ef;
+  background-color: #ffffff;
+  width: 204px !important;
+}
+
+.section-12 .overview-buttons-2 img {
+  margin: 20px 15px;
+  position: relative;
+  z-index: 1;
+  &:hover {
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+}
+
+.section-12 .overview-buttons-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+  }
+}

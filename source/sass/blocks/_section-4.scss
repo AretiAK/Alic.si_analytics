@@ -17,14 +17,12 @@
   }
 }
 
-.application-wrapper {
+.section-4 .alice-application .row {
   max-width: 1440px;
 }
 
 .section-4 .wrapper {
-  width: 100vw;
-  padding: 0;
-  max-width: none;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
 }
@@ -38,14 +36,14 @@
     position: relative;
     top: 0px;
     left: 10px;
+    margin: 100px 0 0 0;
   }
 }
 
 .illustration-usecase-2 {
   width: 100%;
   position: relative;
-  top: -150px;
-  left: 30px;
+  top: 80px;
   @media (max-width: 784px) {
     width: 90%;
     position: relative;
@@ -59,25 +57,36 @@
   font-size: 2.5rem;
   font-weight: 400;
   text-align: left;
-  @media (min-width: 576px) {
+
+  @media (max-width: 576px) {
     margin-bottom: 40px;
-    text-align: center;
+    text-align: left;
   }
 
   @media (min-width: 1200px) {
-    margin-bottom: 40px;
+    margin-bottom: 62px;
     text-align: left;
   }
 }
 
 .section-4 .section-sub-title {
   margin: 30px 0;
-  width: 100%;
+  // width: 100%;
 
-  @media (min-width: 576px) {
+  font-family: Helvetica;
+  font-size: 38px;
+  letter-spacing: 0;
+
+  @media (max-width: 576px) {
     margin-bottom: 40px;
-    text-align: center;
+    text-align: left;
   }
+
+  // @media (max-width: 1320px) {
+  //   br {
+  //     display: none;
+  //   }
+  // }
 
   @media (min-width: 1200px) {
     margin-bottom: 34px;
@@ -91,7 +100,7 @@
 
   @media (min-width: 576px) {
     margin-bottom: 40px;
-    text-align: center;
+    text-align: left;
   }
 
   @media (min-width: 1200px) {
@@ -101,12 +110,21 @@
 }
 
 .section-4 .section-tagline {
-  padding-bottom: 60px;
   text-align: left;
+  font-family: Helvetica;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 30px;
+  max-width: 650px;
+  @media (max-width: 576px) {
+    padding: 10px;
+    text-align: left;
+  }
 
   @media (max-width: 990px) {
     margin-bottom: 20px;
-    text-align: center;
+    padding: 0;
+    text-align: left;
   }
 
   @media (min-width: 1200px) {
@@ -122,7 +140,7 @@
 
   @media (max-width: 990px) {
     margin-bottom: 40px;
-    text-align: center;
+    text-align: left;
   }
 
   @media (min-width: 1200px) {
@@ -136,6 +154,7 @@
   top: 0px;
   display: flex;
   align-items: center;
+  // padding-bottom: 100px;
 
   @media (min-width: 1600px) {
     position: relative;
@@ -146,67 +165,48 @@
 .alice-application__img-col .illustration-1 {
   position: relative;
   right: 170px;
+  top: 85px;
+
   @media (max-width: 1000px) {
     position: relative;
     margin-top: 100px;
     width: 90%;
     right: 0;
+    top: 20px;
   }
-}
-
-.alice-application__img-2-col .illustration-2 {
-  position: relative;
-  left: 100px;
-  top: -100px;
-  width: 90%;
 }
 
 .alice-application__text-col {
+  width: 100vw;
   position: relative;
-  top: 80px;
-}
-
-.alice-application__text-col {
-  padding-left: 0;
-  padding-right: 0;
-
-  @media (min-width: 576px) {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  @media (min-width: 768px) {
-    padding-left: 5%;
-    padding-right: 0;
-  }
-
-  @media (min-width: 992px) {
-    padding-right: 80px;
-  }
-
-  @media (min-width: 1400px) {
-    padding-right: 80px;
-  }
-}
-
-.alice-application__text-2-col {
-  padding-left: 0;
-  padding-right: 0;
-
-  @media (min-width: 576px) {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  @media (min-width: 768px) {
-    padding-left: 5%;
-    padding-right: 0;
-  }
-
-  @media (min-width: 992px) {
-    padding-right: 80px;
+  top: 100px;
+  @media (min-width: 1200px) {
     position: relative;
-    top: -120px;
+    top: 50px;
+  }
+  @media (min-width: 1400px) {
+    position: relative;
+    top: 100px;
+  }
+}
+
+.alice-application__text-col {
+  width: 100vw;
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: 576px) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media (min-width: 992px) {
+    padding-right: 80px;
   }
 
   @media (min-width: 1400px) {
@@ -216,28 +216,35 @@
 
 .section-4 .application-overview-buttons a,
 .section-4 .overview-buttons a {
-  margin: 0 !important;
+  margin: 15px;
+  border: 2px solid $blue;
+  background-color: #ffffff;
+  width: 204px !important;
   @media (min-width: 576px) {
     width: 40%;
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover {
+    background-color: $button-color-hover;
   }
 }
 
 .section-4 .application-overview-buttons,
-.section-4 .overview-buttons,
-.section-4 .overview-buttons-2 {
+.section-4 .overview-buttons {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  @media (min-width: 576px) {
+  @media (max-width: 576px) {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
 .section-4 .application-overview-buttons img,
-.section-4 .overview-buttons img,
-.section-4 .overview-buttons-2 img {
-  margin-left: 15px;
+.section-4 .overview-buttons img {
+  margin: 20px 15px;
   position: relative;
   z-index: 1;
   &:hover {
@@ -254,13 +261,7 @@
   }
 }
 
-.section-4 .overview-buttons-2 {
-  @media (min-width: 992px) {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-
-.section-4 .overview-buttons-2 a {
-  margin: 0;
+.section-4 .use-case-text {
+  display: flex;
+  width: 100%;
 }

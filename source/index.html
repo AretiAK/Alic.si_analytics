@@ -42,11 +42,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a href="#applications" class="nav-link">Applications</a>
+                  <a href="#applications" class="nav-link">Use Cases</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a href="#partners" class="nav-link">Partners</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a href="https://medium.com/alice-si" target="_blank" class="nav-link">Medium</a>
                 </li>
@@ -68,19 +68,19 @@
           <div class="overview">
             <div class="row mx-0">
               <div class="col-md-6 col-lg-6 px-0">
-                <h2 class="overview-title">Safe homes and financial support,<br> led by beneficiary data.</h2>
+                <h2 class="overview-title">See the impact of your work, <br>in your data.</h2>
                 <p class="overview-tagline">
                   For any impact driven project, Alice analyses, visualises and matches your data with the impact measurement framework of your choice. 
                 </p>
                 <div class="overview-buttons">
-                  <!-- <a href="https://resonance.vercel.app/#/login" class="tryiffree-button overview-button--apps btn btn-success">Try it for free</a> -->
-                  <a href="#product-demo-list" class="followjourney-button overview-button--apps btn btn-success">Follow our journey</a>
+                  <a href="#product-demo-list" class="tryiffree-button overview-button--apps btn btn-success">Try it free</a>
+                  <a href="#product-demo-list" class="followjourney-button overview-button--apps btn btn-success" style="display: none;">Follow our journey</a>
                   <!--<a href="https://donationsapp.alice.si" target="_blank" class="overview-button overview-button--funds btn btn-light">Fund Projects</a>-->
                 </div>
               </div>
               <div class="col-md-6 col-lg-6 d-flex px-0">
                 <div class="overview-image-wrapper">
-                  <img class="overview-image" src="svg/section-1/splashImage.svg" alt="Graphic on iPad">
+                  <img class="overview-image" src="svg/section-1/splash-illustration-1-final.svg" alt="Graphic on iPad">
                   <img class="overview-image-2" src="svg/section-1/splash-illustration-2-final.svg" alt="Graphic on iPad" style="display: none;">
                 </div>
               </div>
@@ -99,34 +99,40 @@
         <div class="row mx-0">
           <ul class="product-demo-list row">
             <article class="demo__image-col-1 col-lg-4 col-xs-12">       
-              <div class="demo-order-number">1</div>
-              <div>
+              <div class="demo-image">
+                <div class="demo-order-number">1</div>
                 <img src="./svg/Section-2/exampleimg-1.svg" alt="example-1">
               </div>
-              <h4 class="demo-subtitle-1">Set your impact goals</h4>
-              <p class="demo-detail-1">
-                Create your project and identify your impact goals. Each goal is matched with the data upload and creates a dashboard of insights.
-              </p>              
+              <div  class="demo-text">
+                <h4 class="demo-subtitle-1">Set your impact goals</h4>
+                <p class="demo-detail-1">
+                  Create your project and identify your impact goals. Each goal is matched with the data upload and creates a dashboard of insights.
+                </p> 
+              </div>             
             </article>
             <article class="demo__image-col-2 col-lg-4 col-xs-12">
-              <div class="demo-order-number">2</div>
-              <div>
+              <div class="demo-image">
+                <div class="demo-order-number">2</div>
                 <img src="./svg/Section-2/exampleimg-2.svg" alt="example-2">
               </div>
-              <h4 class="demo-subtitle-2">Upload your data</h4>
-              <p class="demo-detail-2">
-                If you gather your data through surveys or IoT devices, you can upload an excel or connect to your Salesforce, or other, database.
-              </p>
+              <div  class="demo-text">
+                <h4 class="demo-subtitle-2">Upload your data</h4>
+                <p class="demo-detail-2">
+                  If you gather your data through surveys or IoT devices, you can upload an excel or connect to your Salesforce, or other, database.
+                </p>
+              </div>
             </article>              
             <article class="demo__image-col-3 col-lg-4 col-xs-12">
-              <div class="demo-order-number">3</div>
-              <div>
+              <div class="demo-image">
+                <div class="demo-order-number">3</div>
                 <img src="./svg/Section-2/exampleimg-3.svg" alt="example-3">
               </div>
-              <h4 class="demo-subtitle-3">Match your framework</h4>
-              <p class="demo-detail-3">
+              <div  class="demo-text">
+                <h4 class="demo-subtitle-3">Match your framework</h4>
+                <p class="demo-detail-3">
                 Select an impact measurement framework (SDG, SROI, ESG, IRIS) or create your own. Your data will be compared to the framework targets and show on your dashboard. 
-              </p>
+                </p>
+              </div>
             </article>
           </ul>
 
@@ -135,11 +141,12 @@
       </div>
     </section>
 
-    <section class="section-4" id="applications">
+    <section class="section-4">
       <div class="wrapper">
         <div class="alice-application">
           <div class="row mx-0">
             <div class="alice-application__text-col col-12 col-lg-7">
+              <div style="width: 90%;" id="applications" >
               <h1 class="application-section-title">Use cases</h1>
               <h2 class="section-sub-title">
                 Safe homes and financial support,<br>
@@ -149,6 +156,7 @@
                 Resonance, the UK’s leading property impact investment fund, houses over 1,600 financially vulnerable people in the UK.<br><br>              
                 Alice won a UK government grant with Resonance to measure the impact of their housing offering, through beneficiary-generated data. 
               </p>
+              </div>
               <div class="application-overview-buttons">
                 <a href="#explore-applications" class="view-use-case-button overview-button--apps btn btn-success">View use case</a>
                 <img src="./svg/section-4/resonance-logo.svg" alt="resonance-logo">
@@ -159,9 +167,14 @@
               <img class="illustration-1" src="./svg/Section-4/illustration.svg" alt="illustration">
               <img class="illustration-usecase-1" src="./svg/Section-4/illustration-usecase.svg" style="display: none;" alt="illustration">
             </div>
-            <img class="background-purple" src="../../svg/Section-4/background-purple.svg" style="width: 100%;" alt="background-purple-image">
+            <!-- <img class="background-purple" src="../../svg/Section-4/background-purple.svg" style="width: 100%;" alt="background-purple-image"> -->
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section-12">
+      <div class="wrapper">
         <div class="alice-application-2">
           <div class="row mx-0">
             <div class="alice-application__img-2-col col-12 col-lg-5">
@@ -193,8 +206,8 @@
         <div class="container-fluid px-0">
           <!-- news letter subscribe -->
           <div class="row m-0">
-            <div class="col-subscribition col-12 col-md-8 p-0"></div>
-            <div class="col-subscribition col-12 col-md-4 p-0">
+            <div class="col-subscribition col-12 col-md-7 p-0"></div>
+            <div class="col-subscribition col-12 col-md-5 p-0">
               <h4 class="section-title new-and-community-title">Sign up to our newsletter</h4>
               <form
                 class="subscribition-form"
@@ -403,7 +416,7 @@
       <div class="wrapper">
         <div class="container-fluid px-0">
           <footer class="footer-section row">
-            <div class="contacts-col col-5 col-md-5 col-xs-12">
+            <div class="contacts-col col-12 col-md-5 col-xs-12">
               <div class="contactinfo-section row">
                 <div class="email-col col-lg-6 col-md-6 col-xs-12">
                   <span class="contacts-title">Email us</span>

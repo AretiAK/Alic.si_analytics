@@ -17,10 +17,24 @@
 }
 
 .section-7 .overview-button {
-  width: 80%;
-  @media (max-width: 800px) {
-    width: 40%;
+  margin: 15px;
+  border: 2px solid #30b9ef;
+  background-color: #ffffff;
+  width: 204px !important;
+  &:hover {
+    background-color: $button-color-hover;
+    color: $secondary-color;
   }
+}
+
+.subscribition-form .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.submit-wrapper .btn-submit {
+  margin: 38px 0;
 }
 
 .col-subscribition {
@@ -38,12 +52,18 @@
 .section-7 .new-and-community-title {
   text-align: center;
   margin-bottom: 30px !important;
-  font-size: 22px;
+  margin-left: 45px;
+  font-size: 40px;
   letter-spacing: 0px;
 
   @media (min-width: 768px) {
     text-align: left;
     margin-bottom: 10px;
+  }
+
+  @media (max-width: 568px) {
+    text-align: left;
+    margin-left: 0;
   }
 }
 
@@ -104,7 +124,7 @@
   @media (min-width: 1200px) {
     display: flex;
     justify-content: flex-end;
-    margin: 22px;
+    // margin: 22px;
   }
 }
 
@@ -153,6 +173,12 @@
 
   @media (min-width: 465px) {
     justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @media (min-width: 768px) {
@@ -211,6 +237,8 @@
 .col-our-customer {
   position: relative;
   top: -180px;
+  display: flex;
+  flex-direction: column;
   @media (max-width: 1200px) {
     position: relative;
     top: -100px;
@@ -229,6 +257,7 @@
 
 .col-our-customer .section-title {
   margin-bottom: 70px;
+  font-size: 40px;
   @media (max-width: 768px) {
     margin: 35px 0;
   }
@@ -237,17 +266,17 @@
 .our-customer-icons {
   display: flex;
   justify-content: space-between;
-}
-
-.our-customer-icons .customers-icon {
-  // @media (max-width: 768px) {
-  //   width: 20%;
-  // }
+  @media (max-width: 447px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .col-our-funders {
   position: relative;
   top: -50px;
+  display: flex;
+  flex-direction: column;
   @media (max-width: 800px) {
     display: flex;
     justify-content: center;
@@ -257,6 +286,7 @@
 .col-our-funders .section-title {
   position: relative;
   left: 250px;
+  font-size: 40px;
   @media (max-width: 1200px) {
     position: relative;
     left: 100px;
@@ -319,6 +349,10 @@
     display: flex;
     flex-direction: row;
   }
+  @media (max-width: 447px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .our-funders-icons-2 {
@@ -341,6 +375,10 @@
     display: flex;
     flex-direction: row;
   }
+  @media (max-width: 447px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .our-funders-icons-2 .funders-icon {
@@ -349,7 +387,15 @@
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
+}
+
+.our-customer-icons a,
+.our-funders-icons a,
+.our-funders-icons-2 a {
+  width: 200px;
+  margin: 15px 0;
 }
 
 .our-funders-icons .funders-icon {
@@ -458,4 +504,12 @@
   display: inline;
   font-size: 40px;
   font-weight: 500;
+}
+
+.twitter-icon {
+  margin: 20px;
+}
+
+.follow-us-title {
+  font-size: 40px;
 }
