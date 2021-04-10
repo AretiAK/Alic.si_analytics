@@ -2586,11 +2586,6 @@ a:hover {
     .alice-application__text-2-col {
       padding-right: 80px; } }
 
-@media (min-width: 992px) {
-  .section-12 .overview-buttons-2 {
-    display: flex;
-    justify-content: space-around; } }
-
 .section-12 .view-use-case-button {
   margin: 15px 0;
   border: 2px solid #30b9ef;
@@ -2614,7 +2609,7 @@ a:hover {
 .section-12 .overview-buttons-2 {
   display: flex;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: flex-start; }
   @media (max-width: 1260px) {
     .section-12 .overview-buttons-2 {
       display: flex;

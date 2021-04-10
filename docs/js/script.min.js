@@ -36,6 +36,7 @@ $('.view-use-case-button').click(function() {
   $('.tryiffree-button').hide();
   $('.followjourney-button').show();
   // Replace overview area text change
+  $('.overview-title').html("Safe homes and financial support,<br>led by beneficiary data.")
   $('.overview-tagline').html("Alice measures the impact of Resonance's housing offering and influences policy makers through beneficiary generated data");
   // $('.overview-button').html('Follow our journey');
   // Replace demo images title
