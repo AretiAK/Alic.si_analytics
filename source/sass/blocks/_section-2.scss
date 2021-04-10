@@ -57,29 +57,6 @@
   }
 }
 
-.demo__image-col-1 h4,
-.demo__image-col-2 h4,
-.demo__image-col-3 h4 {
-  text-align: left;
-  width: 100%;
-  margin-top: 30px;
-  font-family: Helvetica;
-  font-size: 38px;
-  letter-spacing: 0;
-  @media (max-width: 968px) {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-.demo__image-col-1 p,
-.demo__image-col-2 p,
-.demo__image-col-3 p {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 1.7;
-}
-
 .demo__image-col-1 {
   top: -70px;
   @media (min-width: 1500px) {
@@ -126,6 +103,10 @@
 .demo-subtitle-3 {
   font-family: Helvetica;
   font-size: 38px !important;
+  text-align: left;
+  width: 100%;
+  margin-top: 30px;
+  letter-spacing: 0;
 }
 
 .demo-detail-1,
@@ -137,6 +118,8 @@
   letter-spacing: 0;
   line-height: 30px !important;
   text-align: left;
+  font-weight: 300;
+  line-height: 1.7;
 }
 
 .demo-image {

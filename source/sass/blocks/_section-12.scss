@@ -56,10 +56,19 @@
 }
 
 .section-12 .view-use-case-button {
-  margin: 15px;
+  margin: 15px 0;
   border: 2px solid #30b9ef;
   background-color: #ffffff;
   width: 204px !important;
+  @media (min-width: 576px) {
+    // width: 40%;
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover {
+    background-color: $button-color-hover;
+  }
 }
 
 .section-12 .overview-buttons-2 img {
@@ -76,8 +85,42 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  @media (max-width: 576px) {
+  @media (max-width: 1260px) {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
   }
+}
+
+.section-12 .section-sub-title-2 {
+  margin: 30px 0;
+  font-family: Helvetica;
+  font-size: 28px;
+  letter-spacing: 0;
+
+  @media (min-width: 576px) {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 34px;
+    text-align: left;
+  }
+}
+
+.section-12 .section-tagline-2 {
+  margin-bottom: 30px;
+  text-align: left;
+  width: 100%;
+  line-height: 30px;
+
+  // @media (max-width: 990px) {
+  //   margin-bottom: 40px;
+  //   text-align: left;
+  // }
+
+  // @media (min-width: 1200px) {
+  //   margin-bottom: 34px;
+  // }
 }
