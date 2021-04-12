@@ -1124,7 +1124,7 @@ main {
 .alice-application__img-col .illustration-usecase-1 {
   width: 100%;
   position: relative;
-  left: -50px; }
+  left: -100px; }
   @media (max-width: 784px) {
     .alice-application__img-col .illustration-usecase-1 {
       width: 90%;
@@ -1136,7 +1136,7 @@ main {
 .illustration-usecase-2 {
   width: 100%;
   position: relative;
-  top: 80px; }
+  top: 86px; }
   @media (max-width: 784px) {
     .illustration-usecase-2 {
       width: 90%;
